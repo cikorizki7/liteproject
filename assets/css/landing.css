@@ -1,9 +1,16 @@
-html, body {
-  height: 100%;
-  overscroll-behavior-y: contain;
-  overscroll-behavior-x: none;
-  touch-action: pan-y;
-  position: fixed;
-  overflow-y: scroll;
-  width: 100%;
-}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* hentikan scroll langsung di body */
+  }
+
+  #scroll-container {
+    height: 100%;
+    overflow-y: auto; /* aktifkan scroll di container ini */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain; /* cegah pull-to-refresh */
+    touch-action: pan-y;
+  }
+
