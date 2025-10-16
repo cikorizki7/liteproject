@@ -1,5 +1,9 @@
-html body {
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
+html, body {
+  height: 100%;
+  overscroll-behavior-y: contain;
+  overscroll-behavior-x: none;
   touch-action: pan-y;
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
