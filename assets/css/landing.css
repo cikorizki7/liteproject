@@ -8,9 +8,10 @@
 
   #scroll-container {
     height: 100%;
-    overflow-y: auto; /* aktifkan scroll di container ini */
+    overflow-y: scroll; /* aktifkan scroll di container ini */
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain; /* cegah pull-to-refresh */
     touch-action: pan-y;
+    scroll-behavior: smooth;
   }
 
