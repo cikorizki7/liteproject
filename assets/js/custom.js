@@ -155,6 +155,7 @@
 	// refresh the page only if you're crossing into a context
 	// that isn't already set
 	$(window).resize(function() {
+		if (document.fullscreenElement) return;
 		if(($window.width() <= 768) && (context != 'small')) {
 			//refresh the page
 			location.reload();
